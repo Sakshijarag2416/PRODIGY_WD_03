@@ -1,0 +1,102 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    /* Updated professional background gradient */
+    background: linear-gradient(135deg, #2c3e50, #4a6a8a); /* Deep Charcoal to Dark Steel Gray */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ecf0f1; /* Light gray for heading */
+}
+
+#display {
+    font-size: 3.5rem; /* Slightly larger for emphasis */
+    margin: 1rem 0;
+    letter-spacing: 3px; /* Slightly more spacing */
+    font-weight: bold;
+    color: #f1c40f; /* A touch of accent color for the display */
+    font-variant-numeric: tabular-nums; /* Ensures numbers align vertically */
+}
+
+.controls {
+    margin: 1.5rem 0; /* More spacing */
+}
+
+.controls button {
+    background: #34495e; /* Darker background for buttons */
+    color: #ecf0f1; /* Light text on buttons */
+    border: 1px solid #7f8c8d; /* Subtle border */
+    padding: 12px 24px; /* Larger padding for better touch targets */
+    margin: 8px; /* More margin between buttons */
+    font-size: 1.1rem; /* Slightly larger font */
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease; /* Smooth transition */
+}
+
+.controls button:hover {
+    background: #4a6a8a; /* Lighter background on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.controls button:active {
+    transform: translateY(0); /* Press effect */
+}
+
+#laps {
+    margin-top: 2rem; /* More spacing from controls */
+    max-height: 250px; /* Slightly more height for laps */
+    overflow-y: auto;
+    width: 320px; /* Slightly wider */
+    text-align: left;
+    padding: 1.2rem; /* More padding */
+    background: rgba(44, 62, 80, 0.4); /* Darker, more transparent background */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+#laps li {
+    margin: 8px 0; /* More margin */
+    padding: 8px 12px; /* More padding */
+    background-color: rgba(52, 73, 94, 0.6); /* Darker, more transparent list item background */
+    border-radius: 6px; /* More rounded corners */
+    display: flex; /* For better alignment if needed */
+    justify-content: space-between; /* To push time to right if adding more elements */
+    align-items: center;
+    font-size: 1.05rem;
+}
+
+/* Scrollbar styling for a consistent look */
+#laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+#laps::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+    background: #7f8c8d;
+    border-radius: 10px;
+}
+
+#laps::-webkit-scrollbar-thumb:hover {
+    background: #95a5a6;
+}
